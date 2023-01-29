@@ -5,11 +5,11 @@ from bs4 import BeautifulSoup
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-SPOTIPY_CLIENT_ID= "ec9b337ddff64385a095d650f5ad754a"
-SPOTIPY_CLIENT_SECRET = "b81a6530a7d046179cdbe94b4c3c899e"
+SPOTIPY_CLIENT_ID= "add your client id"
+SPOTIPY_CLIENT_SECRET = "add client secret"
 redirect_url = "https://google.com"
 scope = "playlist-modify-public"
-username = "31vjbnf66y5c62xt4rguk4i2lobi"
+username = "add username"
 
 auth_manager = SpotifyOAuth(SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, redirect_url, scope=scope, username=username)
 spotify = spotipy.Spotify(auth_manager=auth_manager)
